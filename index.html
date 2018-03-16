@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vibe Journal</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="jumbotron edm-jumbo">
+            <h1 class="text-center"><strong>Vibe Journal</strong></h1>
+        </div>
+
+        <!--Header that containt "My Journal"-->
+
+        <div class="row journal-entry">
+            <div class="col-12 journal-cards">
+                <div class="card">
+                    <div class="card-header">
+                        My Journal
+                    </div>
+                </div>
+                <!-- Contains specs for the text box -->
+
+                <div class="mx-auto" style="width: 700px;" style="height:700 px;" style="margin-bottom: 5px;">
+                    <div class="form-group"></div>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+
+                <!-- Contains Spec for Submit Button -->
+                <div class=c ontainer>
+                    <div class="form-row text-center">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary"> My Entries </button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <!-- Contains the Playlist Table-->
+    <div class="card-body">
+        <div class="employee-results">
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th scope="col">Your Playlists</th>
+                        <!--This will contain the playlist variables/lists -->
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
+
+<!-- (Currently Placeholders) Put Personal Firebase Links Here -->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+<script src="assets/firebase-key.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+<script src="assets/employee.js"></script>
+
 </html>
