@@ -37,8 +37,11 @@ h1{
 }
 
 body{
-	background-image: url("images/sunset.jpg");
+	background-image: url("sunset.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: transparent;
+ 	
 }
 
 .weather{
@@ -49,3 +52,4 @@ body{
 	font-family: 'Neucha', cursive;
 	font-size: 15px;
 }
+

@@ -37,8 +37,11 @@ h1{
 }
 
 body{
-	background-image: url("images/night.png");
+	background-image: url("night.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: transparent;
+ 	
 }
 
 .weather{
@@ -49,4 +52,3 @@ body{
 	font-family: 'Neucha', cursive;
 	font-size: 15px;
 }
-

@@ -6,6 +6,7 @@
 }
 
 .form-control{
+	align-content: center;
 	height:200px;
 	margin-bottom: 30px;
 }
@@ -38,9 +39,17 @@ h1{
 }
 
 body{
-	background-image: url("images/daytime.jpg");
+	
+	background-image: url("daytime.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: transparent;
-}
+	
+
+    }
+
+
+
 
 .weather{
 	width: 200px;
