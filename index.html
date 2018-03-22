@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang=en>
 
@@ -8,42 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Vibe Journal</title>
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-   
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Caveat:700|Nanum+Myeongjo|Neucha|Patrick+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="assets/night.css">
+    
 </head>
 
 <body>
+
+
+ <nav class="z-depth-0">
+    <div class="nav-wrapper">
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="entry"><a href="sass.html">My Entries</a></li>
+        <li class="about"><a href="badges.html">About</a></li>
+        <li class="logout" id="btnLogout"><a href="collapsible.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- Dropdown Structure -->
+
+    
+        
+    <div class="weather">
+        <!-- Retrieved data will be dumped here -->
+        <div class="city"></div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+        <div class="temp"></div>
+  
+    </div>
+
     <div class="container">
         <div class="jumbotron edm-jumbo">
-            <h1 class="text-center"><strong>Vibe Journal</strong></h1>
+            <h1 class="text-center"><strong>Vibe. Journal.</strong></h1>
         </div>
 
         <!--Header that containt "My Journal"-->
 
-        <div class="row journal-entry">
+        <div class="row journal-entry ">
             <div class="col-12 journal-cards">
-                <div class="card">
-                    <div class="card-header">
-                        My Journal
-                    </div>
-                </div>
+               
                 <!-- Contains specs for the text box -->
 
-                <div class="mx-auto" style="width: 700px;" style="height:700 px;" style="margin-bottom: 5px;">
+                <div class="mx-auto" style="width: 500px;" style="height:700px;" style="margin-bottom: 5px;">
                     <div class="form-group"></div>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <textarea class="form-control" rows="17" id="comment" placeholder="Your thoughts go here..."></textarea>
+
                 </div>
 
                 <!-- Contains Spec for Submit Button -->
-                <div class=c ontainer>
+                <div class=container>
                     <div class="form-row text-center">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <button type="submit" class="btn btn-primary"> My Entries </button>
+                            <button type="submit" class="btn btn-primary">Music</button>
                         </div>
 
 
@@ -63,14 +85,14 @@
     </div>
 
     <!-- Contains the Playlist Table-->
-    <div class="card-body">
+ <!--  <div class="card-body">
         <div class="employee-results">
             <table class="table">
                 <thead class="thead">
                     <tr>
-                        <th scope="col">Your Playlists</th>
+                        <th scope="col">Your Playlists</th>-->
                         <!--This will contain the playlist variables/lists -->
-                    </tr>
+                  <!--  </tr>
 
                 </thead>
                 <tbody>
@@ -81,7 +103,7 @@
     </div>
     </div>
     </div>
-    </div>
+    </div>-->
 </body>
 
 <!-- (Currently Placeholders) Put Personal Firebase Links Here -->
@@ -95,8 +117,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
 
-<script src="assets/javascript/index.js"></script>
+
 <script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/weather.js"></script>
+
+
 
 </html>
-

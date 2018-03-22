@@ -29,7 +29,8 @@
      const promise = auth.signInWithEmailAndPassword(email, pass);
      promise.catch(e => console.log(e.message));
      promise.then(function(e){
-       alert("You are logged in!");
+      document.location.href = "index.html";
+       
      });
    });
    //Add signup event
@@ -54,6 +55,7 @@
    // Add realtime listener
    firebase.auth().onAuthStateChanged(firebaseUser => {
      if (firebaseUser) {
+      //document.location.href = "index.html";
        console.log(firebaseUser);
        btnLogout.classList.remove('hide');
      } else {
@@ -63,3 +65,4 @@
 
    });
  }());
+

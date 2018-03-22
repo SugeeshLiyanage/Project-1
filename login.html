@@ -7,44 +7,36 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Caveat:700|Nanum+Myeongjo|Neucha|Patrick+Hand" rel="stylesheet">
 
     <title>login</title>
-    <link rel="stylesheet" href="assets/css/style.css"
+    <link rel="stylesheet" href="assets/login.css">
   </head>
   <body>
     
-    <div class="container">
+
+   <h1>Welcome</h1>
+   <h2>Vibe Journal</h2>
+
+
+   <p class="intro">To get started, type your username and password OR sign up using an existing email and create a password.</p>
+
+    <div class="login-container" style="width: 450px;" style="height:700px";>
             <form>
                     <div class="form-group row">
-                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
                       <div class="col-sm-10">
                         <input type="email" class="form-control" id="txtEmail" placeholder="Email">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                      <label for="inputPassword3" class="col-sm-2 col-form-label password-label">Password:</label>
                       <div class="col-sm-10">
                         <input type="password" class="form-control" id="txtPassword" placeholder="Password">
                       </div>
                     </div>
-                    <fieldset class="form-group">
-                      <div class="row">
-                        
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            
-                          </div>
-                          <div class="form-check">
-                            
-                          </div>
-                          <div class="form-check disabled">
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
                     <div class="form-group row">
-                      <div class="col-sm-2">Checkbox</div>
                       <div class="col-sm-10">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -55,10 +47,10 @@
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-10">
-                        <button type="submit" id = "btnLogin" class="btn btn-primary">Sign in</button>
-                        <button id="btnSignUp" class="btn btn-primary">Sign Up</button>
-                        <button id="btnLogout" class="btn btn-action hide">Log out</button>
+                      <div class="theButtons col-sm-10">
+                        <button type="submit" id = "btnLogin" class="btn btn-primary deep-orange lighten-3">Sign in</button>
+                        <button id="btnSignUp" class="btn btn-primary deep-orange lighten-3">Sign Up</button>
+                        
                       </div>
                     </div>
                   </form>
@@ -73,6 +65,3 @@
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
-          
-          
-           
