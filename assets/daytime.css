@@ -6,6 +6,7 @@
 }
 
 .form-control{
+	align-content: center;
 	height:200px;
 	margin-bottom: 30px;
 }
@@ -13,6 +14,7 @@
 nav{
 	background-color: transparent;
 	font-family: 'Neucha', cursive;
+	border-bottom: none;
 
 }
 
@@ -37,12 +39,17 @@ h1{
 }
 
 body{
-	background-image: url("images/night.png");
+	
+	background-image: url("images/daytime.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: transparent;
- 	
-}
+	
+
+    }
+
+
+
 
 .weather{
 	width: 200px;

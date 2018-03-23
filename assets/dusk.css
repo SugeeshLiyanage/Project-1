@@ -37,7 +37,7 @@ h1{
 }
 
 body{
-	background-image: url("images/night.png");
+	background-image: url("images/sunset.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: transparent;
@@ -52,3 +52,4 @@ body{
 	font-family: 'Neucha', cursive;
 	font-size: 15px;
 }
+
