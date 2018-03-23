@@ -18,6 +18,7 @@
    const btnLogout = document.getElementById('btnLogout');
 
    //Add login event
+   if(btnLogin)
    btnLogin.addEventListener('click', e => {
      e.preventDefault();
      //Get email and pass
@@ -34,6 +35,7 @@
      });
    });
    //Add signup event
+   if(btnSignUp)
    btnSignUp.addEventListener('click', e => {
      e.preventDefault();
      //Get email and pass
@@ -47,9 +49,15 @@
        .catch(e => console.log(e.message));
    });
 
+  if(btnLogout)
    btnLogout.addEventListener('click', e => {
+    console.log("logout callback")
      e.preventDefault();
-     firebase.auth().signOut();
+     var promise = firebase.auth().signOut();
+     promise.then(function(){
+        window.location.href = "login.html";
+     });
+
    });
 
    // Add realtime listener
@@ -57,10 +65,11 @@
      if (firebaseUser) {
       //document.location.href = "index.html";
        console.log(firebaseUser);
-       btnLogout.classList.remove('hide');
+       //btnLogout.classList.remove('hide');
      } else {
        console.log('not logged in');
-       btnLogout.classList.add('hide');
+       //btnLogout.classList.add('hide');
+       //window.location.href = "login.html";
      }
 
    });
