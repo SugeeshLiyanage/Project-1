@@ -21,19 +21,19 @@ open();
       var currentTime = new Date().getHours();
 
       if (0 <= currentTime && currentTime < 5) {
-       $("head").append("<link rel='stylesheet' href='night.css' type='text/css'>");
+       $("head").append("<link rel='stylesheet' href='assets/night.css' type='text/css'>");
       }
       if (5 <= currentTime && currentTime < 11) {
-       $("head").append("<link rel='stylesheet' href='morning.css' type='text/css'>");
+       $("head").append("<link rel='stylesheet' href='assets/morning.css' type='text/css'>");
       }
       if (11 <= currentTime && currentTime < 16) {
-       $("head").append("<link rel='stylesheet' href='daytime.css' type='text/css'>");
+       $("head").append("<link rel='stylesheet' href='assets/daytime.css' type='text/css'>");
       }
       if (16 <= currentTime && currentTime < 22) {
-       $("head").append("<link rel='stylesheet' href='dusk.css' type='text/css'>");
+       $("head").append("<link rel='stylesheet' href='assets/dusk.css' type='text/css'>");
       }
       if (22 <= currentTime && currentTime <= 24) {
-       $("head").append("<link rel='stylesheet' href='night.css' type='text/css'>");
+       $("head").append("<link rel='stylesheet' href='assets/night.css' type='text/css'>");
       }
 }
 
