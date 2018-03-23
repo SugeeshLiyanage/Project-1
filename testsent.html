@@ -1,0 +1,20 @@
+<html>
+ <head>
+<script type="text/javascript" src="https://bomeara.github.io/sentimood/sentimood.js"></script>
+ </head>
+<body>
+
+  <p id="leftresponse" align="left"></p>
+  <textarea name="letterleft" id="letterleft" rows="10" cols="40" onchange="ParseLetter(this.value, 'leftresponse')">text here</textarea>
+
+ <script type="text/javascript">
+ function ParseLetter(letterValue, position){
+ sentiment = new Sentimood();
+
+     document.getElementById(position).innerHTML = "<br/>Sentiment: " + sentiment.analyze(letterValue)['score'];
+     console.log(sentiment.analyze(letterValue)['score'])
+};
+ </script>
+
+ </body>
+</html>
