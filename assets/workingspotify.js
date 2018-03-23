@@ -1,3 +1,10 @@
+ 
+$(".submitBtn").on("click", function(event){
+    ParseLetter(this.value, 'leftresponse');
+    $("#letterleft").val("");
+})
+
+
  function ParseLetter(letterValue, position){
         sentiment = new Sentimood();
                 
