@@ -11,9 +11,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Caveat:700|Nanum+Myeongjo|Neucha|Patrick+Hand" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <!-- Compiled and minified JavaScript -->
-    <link rel="stylesheet" href="assets/night.css">
+    
     
 </head>
 
@@ -24,23 +24,25 @@
     <div class="nav-wrapper">
       
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class="entry"><a href="sass.html">My Entries</a></li>
-        <li class="about"><a href="badges.html">About</a></li>
-        <li class="logout" ><a id="btnLogout" href="collapsible.html">Logout</a></li>
+        <li class="entry"><a href="entry.html" title="Read Past Entries">My Entries</a></li>
+        <li class="about"><a href="badges.html" title="Learn More About Us">About</a></li>
+        <li class="logout"><a href="login.html " title="Get outta here!">Logout</a></li>
       </ul>
     </div>
   </nav>
     <!-- Dropdown Structure -->
 
-    
+
+
+    <div>
+
         
     <div class="weather">
-        <!-- Retrieved data will be dumped here -->
-        <div class="city"></div>
-        <div class="wind"></div>
-        <div class="humidity"></div>
-        <div class="temp"></div>
-  
+         <!-- Retrieved data will be dumped here -->
+         <div class="city"></div>
+         <div class="wind"></div>
+         <div class="humidity"></div>
+         <div class="temp"></div>
     </div>
 
     <div class="container">
@@ -57,7 +59,7 @@
 
                 <div class="mx-auto" style="width: 500px;" style="height:700px;" style="margin-bottom: 5px;">
                     <div class="form-group"></div>
-                    <textarea class="form-control" rows="17" id="comment" placeholder="Your thoughts go here..."></textarea>
+                    <textarea class="form-control" rows="17" id="letterleft" name="letterleft" placeholder="Your thoughts go here..."></textarea>
 
                 </div>
 
@@ -65,7 +67,7 @@
                 <div class=container>
                     <div class="form-row text-center">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Music</button>
+                            <button type="submit" class="btn btn-primary submitBtn" title="Playlist Based On Your Entry">Music</button>
                         </div>
 
 
@@ -85,41 +87,33 @@
     </div>
 
     <!-- Contains the Playlist Table-->
- <!--  <div class="card-body">
-        <div class="employee-results">
-            <table class="table">
-                <thead class="thead">
-                    <tr>
-                        <th scope="col">Your Playlists</th>-->
-                        <!--This will contain the playlist variables/lists -->
-                  <!--  </tr>
+   <div id="iframeHolder"> </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>-->
 </body>
 
 <!-- (Currently Placeholders) Put Personal Firebase Links Here -->
 
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
-<!--<script src="assets/firebase-key.js"></script>-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+
+
+<script type='text/javascript' src="assets/workingspotify.js"></script>
+<script type='text/javascript' src="assets/weather.js"></script>
+<script type='text/javascript' src="assets/app.js"></script>
+<script type='text/javascript' src="assets/timestampAdditional.js"></script>
+<script type="text/javascript" src="https://bomeara.github.io/sentimood/sentimood.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
-
-
-<script src="assets/javascript/app.js"></script>
-<script src="assets/javascript/weather.js"></script>
 
 
 
