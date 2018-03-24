@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vibe Journal</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Caveat:700|Nanum+Myeongjo|Neucha|Patrick+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    
+    
+</head>
+
+<body>
+
+
+ <nav class="z-depth-0">
+    <div class="nav-wrapper">
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="entry"><a href="entry.html" title="Read Past Entries">My Entries</a></li>
+        <li class="about"><a href="badges.html" title="Learn More About Us">About</a></li>
+        <li class="logout"><a href="login.html " title="Get outta here!">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- Dropdown Structure -->
+
+
+
+    <div>
+
+        
+    <div class="weather">
+        <div class="weather">
+       <!-- Retrieved data will be dumped here -->
+       <div class="city"></div>
+       <div class="wind"></div>
+       <div class="humidity"></div>
+       <div class="temp"></div>
+   </div>
+
+    </div>
+
+    <div class="container">
+        <div class="jumbotron edm-jumbo">
+            <h1 class="text-center"><strong>Vibe. Journal.</strong></h1>
+        </div>
+
+        <!--Header that containt "My Journal"-->
+
+        <div class="row journal-entry ">
+            <div class="col-12 journal-cards">
+               
+                <!-- Contains specs for the text box -->
+
+                <div class="mx-auto" style="width: 500px;" style="height:700px;" style="margin-bottom: 5px;">
+                    <div class="form-group"></div>
+                    <textarea class="form-control" rows="17" id="letterleft" name="letterleft" placeholder="Your thoughts go here..."></textarea>
+
+                    <script type="text/javascript">
+                        function ParseLetter(letterValue, position){
+                    sentiment = new Sentimood();
+                   
+                    var mood = (sentiment.analyze(letterValue)['score'])
+                        console.log(sentiment.analyze(letterValue)['score'])
+                        };
+
+                    </script>
+
+                </div>
+
+                <!-- Contains Spec for Submit Button -->
+                <div class=container>
+                    <div class="form-row text-center">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary submitBtn" title="Playlist Based On Your Entry">Music</button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <!-- Contains the Playlist Table-->
+   <div id="iframeHolder"> </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+<!-- (Currently Placeholders) Put Personal Firebase Links Here -->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+
+
+<script type='text/javascript' src="assets/workingspotify.js"></script>
+<script type='text/javascript' src="assets/weather.js"></script>
+<script type='text/javascript' src="assets/app.js"></script>
+<script type='text/javascript' src="assets/timestampAdditional.js"></script>
+<script type="text/javascript" src="https://bomeara.github.io/sentimood/sentimood.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+
+
+</html>
