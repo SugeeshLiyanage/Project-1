@@ -38,11 +38,14 @@
 
         
     <div class="weather">
-         <!-- Retrieved data will be dumped here -->
-         <div class="city"></div>
-         <div class="wind"></div>
-         <div class="humidity"></div>
-         <div class="temp"></div>
+        <div class="weather">
+       <!-- Retrieved data will be dumped here -->
+       <div class="city"></div>
+       <div class="wind"></div>
+       <div class="humidity"></div>
+       <div class="temp"></div>
+   </div>
+
     </div>
 
     <div class="container">
@@ -60,6 +63,16 @@
                 <div class="mx-auto" style="width: 500px;" style="height:700px;" style="margin-bottom: 5px;">
                     <div class="form-group"></div>
                     <textarea class="form-control" rows="17" id="letterleft" name="letterleft" placeholder="Your thoughts go here..."></textarea>
+
+                    <script type="text/javascript">
+                        function ParseLetter(letterValue, position){
+                    sentiment = new Sentimood();
+                   
+                    var mood = (sentiment.analyze(letterValue)['score'])
+                        console.log(sentiment.analyze(letterValue)['score'])
+                        };
+
+                    </script>
 
                 </div>
 
@@ -92,6 +105,7 @@
     </div>
     </div>
     </div>
+
 </body>
 
 <!-- (Currently Placeholders) Put Personal Firebase Links Here -->
