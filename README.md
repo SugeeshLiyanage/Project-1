@@ -30,5 +30,16 @@ UX/UI
 Updates the DOM dynamically
 Interface changes based on the time of day
 
+Tools
+Materialize <http://materializecss.com/>  Bonus - Great for adding a cleaner aesthetic.
+Googlefonts 
+Bootstrap  <https://getbootstrap.com/strap> - Better for structure. 
+Pexels.com <https://www.pexels.com/>
+Pixabay <https://pixabay.com/>
+Spotify API
+Weather API
+Javascript Library Sentimood
+Firebase
+
 
 
