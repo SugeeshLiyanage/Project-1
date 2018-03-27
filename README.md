@@ -16,3 +16,19 @@ Having a semantics tool is useful when:
   Understanding customer satisfaction
 In general, semantics tools are becoming more popular in the PR and Social community fields.
 
+Features
+
+Application
+Lets you Log In as a User.
+Lets you enter and submit text directly
+Lets you see your previous journal entries.
+Uses semantic analytics API to judge your mood.
+Uses Spotify API based on your mood to link you to a playlist based on your mood.   
+
+UX/UI
+
+Updates the DOM dynamically
+Interface changes based on the time of day
+
+
+
